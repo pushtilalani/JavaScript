@@ -1,0 +1,133 @@
+<!-- 1) - Primitive DataType -->
+
+<html>
+    <head>
+        <script>
+            var x=16+4+"abc";
+            var y="abc"+16+4;
+            document.writeln(x);
+            document.write(y);
+            document.write("<br>");
+        </script>
+    </head>
+</html>
+
+
+
+
+<html>
+    <head>
+        <script>
+            var name;
+            var name1=null;
+            var num=12;
+            var str="xyz";
+            var b="true";
+            document.writeln(typeof(num));
+            document.writeln(typeof(str));
+            document.writeln(typeof(b));
+            document.writeln(typeof(null));
+            document.write("<br>");
+        </script>
+    </head>
+</html>
+
+
+
+<!-- 2) - Non-Primitive DataType -->
+
+
+
+<!-- i) - object  -->
+
+
+<html>
+    <head>
+        <script>
+            const person={firstname: "Pushti",surname: "Lalani"};
+            document.writeln(person.firstname);
+            document.write(person.surname);
+            document.write("<br>");
+        </script>
+    </head>
+</html>
+
+
+
+
+<!-- ii) - Array -->
+
+
+
+<html>
+    <head>
+        <script>
+            const array=["mango","orange","kiwi","lichi","apple"];
+            document.writeln(array[0]);
+            document.writeln(array[1]);
+            document.writeln(array[2]);
+            document.writeln(array[3]);
+            document.writeln(array[4]);
+            document.writeln(array.length);
+            document.writeln(array.length-1);
+            document.writeln("<br>");
+        </script>
+    </head>
+</html>
+
+
+
+
+<!--1)-  Display all elements in new line. -->
+
+
+<html>
+    <head>
+        <script>
+           var emp=["xyz","abc","pqr"];
+           for(i=0;i<emp.length;i++) {
+            document.writeln(emp[i]);
+           }
+           document.write("<br>");
+        </script>
+    </head>
+</html>
+
+
+
+<!--2) -  Using new Array[] Keyword. -->
+
+
+
+<html>
+    <head>
+        <script>
+            var a=new Array() ;
+            a[0]="abc";
+            a[1]="xyz";
+            a[2]="pqr";
+            for(i=0;i<a.length;i++) {
+            document.writeln(a[i]);
+           }
+           document.write("<br>");
+        </script>
+    </head>
+</html>
+
+
+
+
+<!-- 3) -->
+
+
+<html>
+    <head>
+        <script>
+            var b=new Array("pqr","abc","xyz") ;
+            for(i=0;i<b.length;i++) {
+            document.writeln(b[i]);
+           }
+           document.write("<br>");
+        </script>
+    </head>
+</html>
