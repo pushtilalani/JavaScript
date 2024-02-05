@@ -1,0 +1,207 @@
+<html>
+    <head>
+        <script>
+            var a=10;                 // global
+            function abc() {
+                var x=10;
+                document.writeln(a);
+                document.write(x);         // local
+            }
+            document.write(a);
+            document.write("<br>");
+        </script>
+    </head>
+</html>
+
+
+
+<html>
+    <head>
+        <script>
+            var d=200;
+            function a() {
+                document.write(d);
+            }
+            document.write(d);
+            document.write("<br>")
+        </script>
+    </head>
+</html>
+
+
+
+
+<html>
+    <head>
+        <script>
+            var c=10;
+            function b() {
+                var c=15;
+                document.writeln(c);
+                console.log(c);
+            }
+            b()
+            document.write(c);
+            console.log(c);
+            document.write("<br>");
+        </script>
+    </head>
+</html>
+
+
+
+
+
+<html>
+    <head>
+        <script>
+            var y=200;
+            function ab() {
+                var z=201;
+                document.writeln(z);
+                document.writeln(y);
+            }
+            ab()
+            document.write(y);
+            document.write("<br>");
+        </script>
+    </head>
+</html>
+
+
+
+
+
+<html>
+    <head>
+        <script>
+            var v=10;
+            {
+                var v=15;
+                document.writeln(v);
+                console.log(v);
+            }
+            document.write(v);
+            console.log(v);
+            document.write("<br>");
+        </script>
+    </head>
+</html>
+
+
+
+
+
+<html>
+    <head>
+        <script>
+            var w=10;
+                var w=15;
+                document.writeln(w);
+                console.log(w);
+            document.write(w);
+            console.log(w);
+            document.write("<br>");
+        </script>
+    </head>
+</html>
+
+
+
+
+<html>
+    <head>
+        <script>
+            let l=10;
+            {
+                let l=15;
+                document.writeln(l);
+                console.log(l);
+            }
+            document.write(l);
+            console.log(l);                // 15
+                                           // 10
+            document.write("<br>");
+        </script>
+    </head>
+</html>
+
+
+
+
+
+
+<html>
+    <head>
+        <script>
+           document.write(p);
+           console.log(p);        // undefined
+           var p=10;
+           document.write("<br>");
+        </script>
+    </head>
+</html>
+
+
+
+
+
+<html>
+    <head>
+        <script>
+           document.write(q);
+           console.log(q);        //  Uncaught ReferenceError ReferenceError: Cannot access 'q' before initialization
+           let q=10;
+           document.write("<br>");
+        </script>
+    </head>
+</html>
+
+
+
+
+
+
+<html>
+    <head>
+        <script>
+            var j=10;
+            var j=8;
+            j=7;
+            document.write(j);
+            document.write("<br>")
+        </script>
+    </head>
+</html>
+
+
+
+
+<!-- <html>
+    <head>
+        <script>
+            let k=10;
+            let k=8;
+            k=7;
+            document.write(k);
+            console.log(k);            // Uncaught SyntaxError SyntaxError: Identifier 'k' has already been declared
+            document.write("<br>")
+        </script>
+    </head>
+</html> -->
+
+
+
+
+
+
+<html>
+    <head>
+        <script>
+            let h=10;
+            h=7;
+            document.write(h);
+            document.write("<br>")
+        </script>
+    </head>
+</html>
