@@ -1,0 +1,100 @@
+<!-- 1) - Multiply each elements of an array by 2 and display in new line. -->
+
+<html>
+    <head>
+        <script>
+            var a=[1,2,3,4,5,6,7,8,9,10];
+            for(i=0;i<a.length;i++) {
+                document.write(a[i]*2+"<br>")
+                document.write("<br>")
+            }
+        </script>
+    </head>
+</html>
+
+
+
+<!-- 2) - Write JS Code to calculate how many days left in your birthday in same year. -->
+
+
+<html>
+    <head>
+        <script>
+            function daysdifference(date1,date2) {
+                one_day=24*60*60*1000  ;            // i day to msec
+                date1_ms=date1.getTime();
+                date2_ms=date2.getTime();
+                difference_ms=Math.abs(date1_ms-date2_ms);
+                return(Math.round(difference_ms/one_day));
+            }
+            var d=new Date();
+            d.setDate(8);
+            d.setMonth(2);
+            var d1=new Date();
+            document.write("Number of days left : " + daysdifference(d,d1));
+            document.write("<br>");
+        </script>
+    </head>
+</html>
+
+
+
+<!-- 3) - Write JS Code that find position of first occurrence of vovel 'a' and last occurrence of vovel 'a' in the given word 'ajanta'.
+     Also written the string between them. -->
+
+
+
+<html>
+    <head>
+        <script>
+            z="ajanta";
+            x=z.indexOf("a");
+            y=z.lastIndexOf("a");
+            document.write("first occurrence of 'a' is : " + x + "<br>");
+            document.write("last occurrence of 'a' is : " + y + "<br>");
+            document.write("substring : " + z.substring(x+1,y) + "<br>");
+            document.write("<br>");
+        </script>
+    </head>
+</html>
+
+
+
+<!-- 4) - Write JS Code to find out wheather a person is eligible for voting or not depending on his age. -->
+
+
+
+<html>
+    <head>
+        <script>
+            age=20;
+            if(age>=18) {
+                document.write("eligible for voting" + age + "<br>");
+            }
+            else {
+                document.write("not eligible for voting" + age);
+            }
+            document.write("<br>");
+        </script>
+    </head>
+</html>
+
+
+
+
+<!-- 5) - Write Js Code to print 0 to 9 numbers in new line using loops. -->
+
+
+
+<html>
+    <head>
+        <script>
+           var i=0;
+           while(i<10) {
+            document.write(i + "<br>");
+            i++;
+           }
+            document.write("<br>");
+        </script>
+    </head>
+</html>
