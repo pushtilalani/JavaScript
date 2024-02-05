@@ -1,0 +1,77 @@
+<!-- 1) - function without parameter. -->
+
+
+<html>
+    <head>
+        <script>
+            function fun1() {
+                document.write("Hello World!");
+            }
+           // fun1();
+            document.write("<br>");
+        </script>
+    </head>
+    <body>
+        <input type="button" onClick="fun1()" value="Click">
+    </body>
+</html>
+
+
+
+<!-- 2) - function with parameter. -->
+
+
+
+<html>
+    <head>
+        <script>
+            function fun(f_name,l_name) {
+                document.writeln(" Hello " + f_name + " world " + l_name);
+            }
+            document.write("<br>");
+        </script>
+    </head>
+    <body>
+        <input type="button" onClick="fun('abc','xyz')" value="Click">
+    </body>
+</html>
+
+
+
+
+<!-- 3) - return statement. -->
+
+
+
+
+<html>
+    <head>
+        <script>
+            function Product(a,b) {
+                return a*b;
+            }
+            document.write("<br>");
+            document.write(Product(6,10));
+            document.write("<br>");
+        </script>
+    </head>
+</html>
+
+
+
+
+<!-- 4) - assigning function to variable. -->
+
+
+
+<html>
+    <head>
+        <script>
+            var v=function(p,q) {
+                return p*q;
+            }
+            let result = v(3,5);
+            document.write(result);
+        </script>
+    </head>
+</html>
